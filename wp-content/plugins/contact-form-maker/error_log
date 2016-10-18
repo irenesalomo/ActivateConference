@@ -1,0 +1,1 @@
+[11-Aug-2016 14:21:57] PHP Fatal error:  Call to undefined function plugin_basename() in /home/actv8ftp/public_html/wp-content/plugins/contact-form-maker/contact-form-maker.php on line 11
