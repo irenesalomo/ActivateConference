@@ -13,27 +13,129 @@
  *
  * @package WordPress
  */
+ 
+ /**
+ * Section: The base dir for wordpress
+ * =============================================================================
+ * WordPress needs to know where it is installed. Normally one of the last
+ * things that get defined in the standard wp-config.php file. However we have
+ * moved it up the chain a little bit. So that we can use it ourselves.
+ */
+
+if (!defined('ABSPATH')) define('ABSPATH', dirname(__FILE__).'/');
+
+/**
+ * Section: Environment Specific Configuration
+ * =============================================================================
+ * Here we define our database connection details and any other environment
+ * specific configuration. We use some simple environment detection so that
+ * we can easily define different values regardless of where we run.
+ */
+
+call_user_func(function()
+{
+	// This is where the magic happens
+	$env = function($host)
+	{
+		// Do we have a direct match with the hostname of the OS
+		if ($host == gethostname())
+		{
+			return true;
+		}
+
+		// NOTE: The HTTP_HOST can be spoofed, remove if super paranoid.
+		if (isset($_SERVER['HTTP_HOST']))
+		{
+			if ($host == $_SERVER['HTTP_HOST'])
+			{
+				return true;
+			}
+		}
+
+		// This next bit is stolen from Laravel's str_is helper
+		$pattern = '#^'.str_replace('\*', '.*', preg_quote($host, '#')).'\z#';
+
+		if ((bool) preg_match($pattern, gethostname()))
+		{
+			return true;
+		}
+
+		// NOTE: The HTTP_HOST can be spoofed, remove if super paranoid.
+		if (isset($_SERVER['HTTP_HOST']))
+		{
+			if ((bool) preg_match($pattern, $_SERVER['HTTP_HOST']))
+			{
+				return true;
+			}
+		}
+
+		// No match
+		return false;
+	};
+
+	// Here you can define as many `cases` or environments as you like.
+	// Here are the usual 3 for starters.
+
+	switch(true)
+	{
+		// Irene Local
+		case $env('IreneSalomo'):
+		{
+			define('FRUCTIFY_ENV', 'local');
+			define('DOMAIN_CURRENT_SITE', 'activateconference.au.dev-156.k-d.com.au');
+			define('DB_NAME', 'activate_conference');
+			define('DB_USER', 'root');
+			define('DB_PASSWORD', 'root');
+			define('DB_HOST', 'localhost');
+			break;
+		}
+		
+		// Irene Home Local
+		case $env('Mack_Irene'):
+		{
+			define('FRUCTIFY_ENV', 'local');
+			define('DOMAIN_CURRENT_SITE', 'http://localhost/PurinaOneCat/');
+			define('DB_NAME', 'kdis_purinaonecat');
+			define('DB_USER', 'root');
+			define('DB_PASSWORD', '');
+			define('DB_HOST', 'localhost');
+			break;
+		}
+
+		// Production
+		default:
+		{
+			define('FRUCTIFY_ENV', 'production');
+			define('DOMAIN_CURRENT_SITE', 'http://activateconference.org/');
+			define('DB_NAME', 'actv8ftp_wrdp1');
+			define('DB_USER', 'actv8ftp_wrdp1');
+			define('DB_PASSWORD', 'mbaQOJOTuB3s');
+			define('DB_HOST', 'mysql');
+			define('FORCE_SSL_ADMIN', true);
+		}
+	}
+});
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('WP_CACHE', true); //Added by WP-Cache Manager
-define( 'WPCACHEHOME', '/home/actv8ftp/public_html/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
+define( 'WPCACHEHOME', 'D:\Workspace\WordpressProject\ActivateConference\wp-content\plugins\wp-super-cache/' ); //Added by WP-Cache Manager
 define('DB_NAME', 'actv8ftp_wrdp1');
 
-/** MySQL database username */
+/* // MySQL database username
 define('DB_USER', 'actv8ftp_wrdp1');
 
-/** MySQL database password */
+// MySQL database password 
 define('DB_PASSWORD', 'mbaQOJOTuB3s');
 
-/** MySQL hostname */
+// MySQL hostname 
 define('DB_HOST', 'localhost');
 
-/** Database Charset to use in creating database tables. */
+// Database Charset to use in creating database tables. 
 define('DB_CHARSET', 'utf8');
 
-/** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
+// The Database Collate type. Don't change this if in doubt.
+define('DB_COLLATE', ''); */
 
 /**#@+
  * Authentication Unique Keys and Salts.

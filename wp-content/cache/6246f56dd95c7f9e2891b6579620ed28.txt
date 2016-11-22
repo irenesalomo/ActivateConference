@@ -1,0 +1,31 @@
+01:16:20 4984 / wp_cache_get_cookies_values: /^wp-postpass|^comment_author_|^wordpress_logged_in_/ Cookie detected: wordpress_logged_in_3f528e37805c0aa8cd027cb3169d9195
+01:16:20 4984 / wp_cache_get_cookies_values: return: 06f74696e5cf66c8c0f9a9eeb108dd69
+01:16:20 4984 / supercache dir: D:\Workspace\WordpressProject\ActivateConference/wp-content/cache/supercache/activateconference.au.dev-156.k-d.com.au/
+01:16:20 4984 / No Super Cache file found for current URL: D:\Workspace\WordpressProject\ActivateConference/wp-content/cache/supercache/activateconference.au.dev-156.k-d.com.au/index.html
+01:16:20 4984 / wp_cache_get_cookies_values: cached: 06f74696e5cf66c8c0f9a9eeb108dd69
+01:16:20 4984 / In WP Cache Phase 2
+01:16:20 4984 / Setting up WordPress actions
+01:16:20 4984 / Created output buffer
+01:16:20 4984 / wp_cache_get_cookies_values: cached: 06f74696e5cf66c8c0f9a9eeb108dd69
+01:16:21 4984 / Output buffer callback
+01:16:21 4984 / wp_cache_get_cookies_values: cached: 06f74696e5cf66c8c0f9a9eeb108dd69
+01:16:21 4984 / Writing non-gzipped buffer to wp-cache cache file.
+01:16:21 4984 / Renamed temp wp-cache file to D:\Workspace\WordpressProject\ActivateConference/wp-content/cache/wp-cache-0f36ea4fd56e2f58d579c60b130fe088.php
+01:16:21 4984 / Sending buffer to browser
+01:16:21 4984 / wp_cache_shutdown_callback: collecting meta data.
+01:16:21 4984 / Writing meta file: D:\Workspace\WordpressProject\ActivateConference/wp-content/cache/meta/wp-cache-0f36ea4fd56e2f58d579c60b130fe088.php
+01:16:25 4984 /wp-admin/options-general.php?page=wpsupercache&tab=easy wp_cache_get_cookies_values: /^wp-postpass|^comment_author_|^wordpress_logged_in_/ Cookie detected: wordpress_logged_in_3f528e37805c0aa8cd027cb3169d9195
+01:16:25 4984 /wp-admin/options-general.php?page=wpsupercache&tab=easy wp_cache_get_cookies_values: return: 06f74696e5cf66c8c0f9a9eeb108dd69
+01:16:25 4984 /wp-admin/options-general.php?page=wpsupercache&tab=easy supercache dir: D:\Workspace\WordpressProject\ActivateConference/wp-content/cache/supercache/activateconference.au.dev-156.k-d.com.au/wp-admin/options-general.php/
+01:16:25 4984 /wp-admin/options-general.php?page=wpsupercache&tab=easy No Super Cache file found for current URL: D:\Workspace\WordpressProject\ActivateConference/wp-content/cache/supercache/activateconference.au.dev-156.k-d.com.au/wp-admin/options-general.php/index.html
+01:16:25 4984 /wp-admin/options-general.php?page=wpsupercache&tab=easy wp_cache_get_cookies_values: cached: 06f74696e5cf66c8c0f9a9eeb108dd69
+01:16:25 4984 /wp-admin/options-general.php?page=wpsupercache&tab=easy In WP Cache Phase 2
+01:16:25 4984 /wp-admin/options-general.php?page=wpsupercache&tab=easy Setting up WordPress actions
+01:16:25 4984 /wp-admin/options-general.php?page=wpsupercache&tab=easy Not caching wp-admin requests.
+01:16:25 4984 /wp-admin/options-general.php?page=wpsupercache&tab=easy maybe_stop_gc: GC flag not found. GC will go ahead..
+01:16:29 4984 /wp-admin/options-general.php?page=wpsupercache&tab=easy wp_cache_get_cookies_values: /^wp-postpass|^comment_author_|^wordpress_logged_in_3f528e37805c0aa8cd027cb3169d9195/ Cookie detected: wordpress_logged_in_3f528e37805c0aa8cd027cb3169d9195
+01:16:29 4984 /wp-admin/options-general.php?page=wpsupercache&tab=easy wp_cache_get_cookies_values: return: 06f74696e5cf66c8c0f9a9eeb108dd69
+01:16:29 4984 /wp-admin/options-general.php?page=wpsupercache&tab=easy In WP Cache Phase 2
+01:16:29 4984 /wp-admin/options-general.php?page=wpsupercache&tab=easy Setting up WordPress actions
+01:16:29 4984 /wp-admin/options-general.php?page=wpsupercache&tab=easy Not caching wp-admin requests.
+

@@ -292,11 +292,11 @@ a.more-link,
 .header-cover { overflow-y: hidden; }
 
 .header {
-	padding: 100px 0;
 	background: no-repeat center;
 	background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
+    height: 400px;
 }
 
 .header-inner { position: relative; z-index: 2; text-align: center; }
@@ -2040,6 +2040,10 @@ img#wpstats { display: none; }
 	/* Structure --------------------------------------- */
 	
 	.wrapper { 	margin-top: 7.5%; }
+    
+    .header{
+        height: 280px;    
+    }
 
 
 }
