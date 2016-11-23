@@ -296,7 +296,7 @@ a.more-link,
 	background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
-    height: 400px;
+    height: 280px;
 }
 
 .header-inner { position: relative; z-index: 2; text-align: center; }
@@ -2031,6 +2031,27 @@ img#wpstats { display: none; }
 /*	14. Responsive
 /* -------------------------------------------------------------------------------- */
 
+@media (min-width: 1760px) {
+    
+    .header{
+        height: 500px;    
+    }
+}
+
+@media (min-width: 1360px) and (max-width: 1759px) {
+    
+    .header{
+        height: 400px;    
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1350px) {
+    
+    .header{
+        height: 340px;    
+    }
+}
+
 
 @media (max-width: 1040px) {
 
@@ -2040,17 +2061,15 @@ img#wpstats { display: none; }
 	/* Structure --------------------------------------- */
 	
 	.wrapper { 	margin-top: 7.5%; }
-    
-    .header{
-        height: 280px;    
-    }
-
 
 }
 
 @media (max-width: 800px) {
 
 	body { font-size: 18px; } 
+     .header{
+        height: 210px;    
+    }
 
 	/* Structure --------------------------------------- */
 
@@ -2356,9 +2375,11 @@ img#wpstats { display: none; }
 	
 	
 	body { font-size: 15px; }
-	
+    	
 	/* Header --------------------------------------- */
-	
+	 .header{
+        height: 120px;    
+    }
 	.header.section { padding: 30px 0; }
 	
 	/* Post --------------------------------------- */
@@ -2460,4 +2481,11 @@ img#wpstats { display: none; }
 	.footer { margin-top: 40px; }
 	
 	
+}
+
+@media (max-width: 375px) {
+	/* Header --------------------------------------- */
+	 .header{
+        height: 90px;    
+    }
 }
