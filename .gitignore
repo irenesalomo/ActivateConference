@@ -1,6 +1,6 @@
 .project
 .idea
-wp-content/cache
+wp-content/cache/*
 wp-content/advanced-cache.php
 wp-content/wp-cache-config.php
 .DS_Store 
