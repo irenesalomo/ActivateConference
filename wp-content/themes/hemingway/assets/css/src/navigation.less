@@ -1,0 +1,131 @@
+/* Nav-toggle --------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------- */
+/*	4. Navigation
+/* -------------------------------------------------------------------------------- */
+
+
+.mobile-menu { display: none; }
+
+.blog-menu li { position: relative; }
+.blog-menu > li { float: left; }
+
+.blog-menu > li:before {
+	content: "/";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -9px;
+	margin-left: -3px;
+	font-size: 16px;
+	color: #444;
+	font-weight: 300;
+	z-index: 1000;
+}
+
+.blog-menu > li:first-child:before { content: none; }
+
+.blog-menu a {
+	display: block;
+	padding: 27px 20px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: rgba(255,255,255,0.4);
+	font-size: 13px;
+}
+
+.blog-menu a:hover,
+.blog-menu .current-menu-item a { color: #FFF; }
+
+.blog-menu > .has-children a,
+.blog-menu > .page_item_has_children a { padding-right: 35px; }
+
+.blog-menu > .has-children::after,
+.blog-menu > .page_item_has_children::after {
+	content: "";
+	display: block;
+	border: 5px solid transparent;
+	border-top-color: rgba(255,255,255,0.4);
+	position: absolute;
+	z-index: 1001;
+	right: 17px;
+	top: 50%;
+	margin-top: -2px;
+}
+
+.blog-menu > .has-children:hover::after,
+.blog-menu > .page_item_has_children:hover::after { border-top-color: #FFF; }
+
+.blog-menu li:hover a {
+	background-color: #1D1D1D;
+	cursor: pointer;
+}
+
+.blog-menu li:hover > a { color: #FFF; }
+
+
+/* Sub menus --------------------------------------- */
+
+
+.blog-menu ul {
+	position: absolute;
+	left: -9999px;
+	display: none;
+	z-index: 999;
+}
+
+.blog-menu ul li {
+    float: none;
+    display: block;
+}
+
+.blog-menu ul > .has-children::after,
+.blog-menu ul > .page_item_has_children::after {
+	content: "";
+	display: block;
+	border: 6px solid transparent;
+	border-left-color: rgba(255,255,255,0.4);
+	position: absolute;
+	z-index: 1001;
+	right: 10px;
+	top: 50%;
+	margin-top: -5px;
+}
+
+.blog-menu ul > .has-children:hover::after,
+.blog-menu ul > .page_item_has_children:hover::after { border-left-color: #FFF; }
+
+.blog-menu ul li { 	
+	width: 240px; 
+	background: #1d1d1d;
+}
+
+.blog-menu ul a {
+	padding: 20px 0px;
+	margin: 0 20px;
+	line-height: 130%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.blog-menu ul > li:last-child a { border-bottom-width: 0; }
+
+.blog-menu li:hover > ul {
+	opacity: 1;
+	left: 0;
+	display: block;
+}
+
+
+/* Deep down --------------------------------------- */
+
+
+.blog-menu ul li:hover > ul {
+	top: 0;
+	left: 240px;
+	margin-left: 0;
+}

@@ -1,0 +1,159 @@
+/* -------------------------------------------------------------------------------- */
+/*	1. Document setup
+/* -------------------------------------------------------------------------------- */
+
+
+body {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: #FFF;
+	color: #444;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+body a {
+	color: #1abc9c;
+	text-decoration: none;
+}
+
+body a:hover {
+	color: #1abc9c;
+	text-decoration: none;
+}
+
+* { 
+	box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.hidden { display: none; }
+.clear { clear: both; }
+.left { float: left; }
+.right { float: right; }
+
+::selection {
+	background: #1abc9c;
+	color: #333;
+}
+
+::-webkit-input-placeholder { color: #A9A9A9; }
+:-ms-input-placeholder { color: #A9A9A9; }
+
+
+/* Transitions --------------------------------------- */
+
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+body a,
+.post-tags a::after {
+	-webkit-transition: all 0.1s ease-in-out;
+	 -moz-transition: all 0.1s ease-in-out;
+	 -ms-transition: all 0.1s ease-in-out;
+	 -o-transition: all 0.1s ease-in-out;
+	 transition: all 0.1s ease-in-out;
+}
+
+.nav-toggle,
+.nav-toggle .bar,
+.blog-menu a,
+.blog-menu ul .has-children,
+.blog-title a,
+.post-title a,
+.format-bubble,
+.post-meta a,
+.featured-media a,
+.content form input,
+.content form textarea,
+.media-caption,
+.post-nav a,
+input#s,
+#searchsubmit,
+.widget-content ul li,
+.widget_recent_entries a,
+.search-toggle.active .metal,
+.search-toggle.active .handle,
+a.more-link,
+.dribbble-shot img,
+.flickr_badge_image a img {
+	-webkit-transition: all 0.2s ease-in-out;
+	 -moz-transition: all 0.2s ease-in-out;
+	 -ms-transition: all 0.2s ease-in-out;
+	 -o-transition: all 0.2s ease-in-out;
+	 transition: all 0.2s ease-in-out;
+}
+
+.tothetop {
+	-webkit-transition: all 0.3s ease-in-out;
+	 -moz-transition: all 0.3s ease-in-out;
+	 -ms-transition: all 0.3s ease-in-out;
+	 -o-transition: all 0.3s ease-in-out;
+	 transition: all 0.3s ease-in-out;
+}
+
+
+/* Screen Reader Text --------------------------------------- */
+
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
