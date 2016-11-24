@@ -94,10 +94,10 @@ call_user_func(function()
 		case $env('Mack_Irene'):
 		{
 			define('FRUCTIFY_ENV', 'local');
-			define('DOMAIN_CURRENT_SITE', 'http://localhost/PurinaOneCat/');
-			define('DB_NAME', 'kdis_purinaonecat');
+			define('DOMAIN_CURRENT_SITE', 'activateconference.dev.ibs.com.au');
+            define('DB_NAME', 'irene_activate');
 			define('DB_USER', 'root');
-			define('DB_PASSWORD', '');
+			define('DB_PASSWORD', 'root');
 			define('DB_HOST', 'localhost');
 			break;
 		}
@@ -120,22 +120,34 @@ call_user_func(function()
 /** The name of the database for WordPress */
 define('WP_CACHE', true); //Added by WP-Cache Manager
 define( 'WPCACHEHOME', 'D:\Workspace\WordpressProject\ActivateConference\wp-content\plugins\wp-super-cache/' ); //Added by WP-Cache Manager
-define('DB_NAME', 'actv8ftp_wrdp1');
 
-/* // MySQL database username
-define('DB_USER', 'actv8ftp_wrdp1');
 
-// MySQL database password 
-define('DB_PASSWORD', 'mbaQOJOTuB3s');
+/**
+ * Section: WordPress Database Table prefix.
+ * =============================================================================
+ * You can have multiple installations in one database if you give each
+ * a unique prefix. Only numbers, letters, and underscores please!
+ */
 
-// MySQL hostname 
-define('DB_HOST', 'localhost');
+$table_prefix  = 'wp_';
 
-// Database Charset to use in creating database tables. 
-define('DB_CHARSET', 'utf8');
+/**
+ * Section: WordPress debugging mode.
+ * =============================================================================
+ * For any environment that is not production lets show PHP errors, warnings
+ * and notices. I know legacy WordPress code can throw a heap of warnings and
+ * deprecated notices but hopefully by forcing these errors to be shown in
+ * development environments we will end up with better code.
+ */
 
-// The Database Collate type. Don't change this if in doubt.
-define('DB_COLLATE', ''); */
+define('WP_DEBUG', false);
+define('SCRIPT_DEBUG', false);
+
+/** Database Charset to use in creating database tables. */
+define('DB_CHARSET', 'utf8mb4');
+
+/** The Database Collate type. Don't change this if in doubt. */
+define('DB_COLLATE', '');
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -174,15 +186,6 @@ $table_prefix  = 'wp_';
  * language support.
  */
 define('WPLANG', '');
-
-/**
- * For developers: WordPress debugging mode.
- *
- * Change this to true to enable the display of notices during development.
- * It is strongly recommended that plugin and theme developers use WP_DEBUG
- * in their development environments.
- */
-define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
 
