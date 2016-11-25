@@ -1,6 +1,6 @@
 <div class="post-meta">
 	
-	<span class="post-date"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_time(get_option('date_format')); ?></a></span>
+	<!--<span class="post-date"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_time(get_option('date_format')); ?></a></span>
 	
 	<?php if( is_sticky() && !has_post_thumbnail() ) { ?> 
 		
@@ -8,11 +8,11 @@
 	
 		<?php _e('Sticky', 'hemingway'); ?>
 	
-	<?php } ?>
+	<?php } ?>-->
 	
 	<?php if ( current_user_can( 'manage_options' ) ) { ?>
 	
-		<span class="date-sep"> / </span>
+		<!--<span class="date-sep"> / </span>-->
 					
 		<?php edit_post_link(__('Edit', 'hemingway')); ?>
 	
