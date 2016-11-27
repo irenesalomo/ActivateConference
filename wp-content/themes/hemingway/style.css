@@ -2038,17 +2038,17 @@ img#wpstats { display: none; }
     }
 }
 
-@media (min-width: 1360px) and (max-width: 1759px) {
+@media (min-width: 1400px) and (max-width: 1759px) {
     
     .header{
         height: 400px;    
     }
 }
 
-@media (min-width: 1100px) and (max-width: 1350px) {
+@media (min-width: 1100px) and (max-width: 1399px) {
     
     .header{
-        height: 340px;    
+        height: 350px;    
     }
 }
 
